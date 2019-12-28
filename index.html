@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <form name="form"><input class="screen" name="screen" /></form>
+            <table>
+                <tr>
+                    <td><input style="color: rgb(163, 30, 30);" class="btn" type="button" value="AC"
+                            onclick="clean() " /></td>
+                    <td><input class="btn" id="btn" type="button" value="DEL" onclick="back()" /></td>
+                    <td><input class="btn" type="button" value="/" onclick="add('/')" /></td>
+                    <td><input type="button" class="btn" value="x" onclick="add('*')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="7" onclick="add(7)" /></td>
+                    <td><input type="button" class="btn" value="8" onclick="add(8)" /></td>
+                    <td><input type="button" class="btn" value="9" onclick="add(9)" /></td>
+                    <td><input type="button" class="btn" value="-" onclick="add('-')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="4" onclick="add(4)" /></td>
+                    <td><input class="btn" type="button" value="5" onclick="add(5)" /></td>
+                    <td><input class="btn" type="button" value="6" onclick="add(6)" /></td>
+                    <td><input class="btn" type="button" value="+" onclick="add('+')" /></td>
+                </tr>
+                <tr>
+                    <td><input class="btn" type="button" value="1" onclick="add(1)" /></td>
+                    <td><input class="btn" type="button" value="2" onclick="add(2)" /></td>
+                    <td><input class="btn" type="button" value="3" onclick="add(3)" /></td>
+                    <td rowspan="5"><input style="height: 106px;" class="btn" type="button" value="="
+                            onclick="equals()" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input style="width: 106px;" class="btn" type="button" value="0" onclick="add(0)" />
+                    </td>
+                    <td><input class="btn" type="button" value="." onclick="add('.')" /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; coded by futuristicdev</p>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
